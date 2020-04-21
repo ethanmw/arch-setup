@@ -15,7 +15,7 @@ read -p "Type name of disk to install Arch linux (the entire content will be era
 echo -e "This is the content of drive $TARGET1\n"
 fdisk -l /dev/${TARGET1}
 echo -e "\n\nType the drive name again to confirm the deletion "
-read -p "name of drive to install ARCH (press ENTER to cancel): " TARGET2
+read -p "name of drive to install Arch (press ENTER to cancel): " TARGET2
 if [ "$TARGET1" == "$TARGET2" ]; then
   TARGET=$TARGET1
   echo "- Wiping disk $TARGET"
@@ -35,4 +35,4 @@ if [ "$TARGET1" == "$TARGET2" ]; then
 else
   echo "Aborting due to mismatch in target drive"
   echo -e "type ./install.sh  to retry installation\n"
-fi 
+fi
