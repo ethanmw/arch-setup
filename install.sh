@@ -13,7 +13,6 @@ cp pacman.temp /etc/pacman.conf &>/dev/null
 
 cleanup
 umount -R /mnt &>/dev/null
-./select-font.sh
 ./select-mirror.sh
 ./select-disk.sh
 cleanup
